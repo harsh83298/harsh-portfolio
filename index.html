@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Chandak | Portfolio</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #4f46e5;
+      --bg-gradient: linear-gradient(135deg, #e0e7ff, #f8fafc);
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Header / Hero */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      color: var(--text-light);
+      margin: 8px 0;
+    }
+
+    .social a {
+      margin-right: 15px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 6px solid var(--secondary);
+      padding-left: 12px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #eef2ff;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-light);
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <header>
+      <img src="profile.jpeg" alt="Harsh Chandak" />
+      <div>
+        <h1>Harsh Chandak</h1>
+        <p>Software Engineer | Frontend & App Developer</p>
+        <p>
+          Passionate about building scalable, user-friendly applications using
+          modern technologies.
+        </p>
+        <div class="social">
+          <a href="mailto:chandakharsh2807@gmail.com">Email</a>
+          <a href="https://github.com/harsh28" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/harshchandak28" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am a passionate software engineer with strong problem-solving skills
+          and a solid foundation in data structures and algorithms. I enjoy
+          working with modern frameworks like React, Flutter, and exploring
+          cloud & DevOps fundamentals. I believe in writing clean, maintainable,
+          and efficient code.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span class="skill">C</span>
+        <span class="skill">C++</span>
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Flutter</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>College Management System</h3>
+          <p>
+            React Native based platform for managing attendance, notes, and
+            academic records for students, staff, admins, and parents.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Healthcare Application</h3>
+          <p>
+            Flutter application providing nearby clinics, medical stores, and
+            home remedies for common diseases.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: chandakharsh2807@gmail.com</p>
+        <p>GitHub: harsh28</p>
+        <p>LinkedIn: HarshChandak28</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Harsh Chandak. All Rights Reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
